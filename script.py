@@ -1,0 +1,28 @@
+class Dog():
+    def __init__(self,name,breed,owner): #init method is used to instantiate a  object
+        self.name = name #data field
+        self.breed = breed #data field
+        self.owner = owner 
+
+    def bark(self):
+        print(f"{self.name} says hello!")
+
+class Owner():
+    def __init__(self,name,address,contact_number):
+        self.name = name
+        self.address = address
+        self.number = contact_number 
+
+owner1 = Owner("Mihir","Kolkata","900-900-009")
+
+
+    
+
+dog1 = Dog("Billy","French Bulldog",owner1) #creating an object 
+dog1.bark()
+print(dog1.breed) #when you call data field dont use () these brackets
+print(dog1.name)
+print(dog1.owner.name )
+
+dog2 = Dog("Priyanshu","Maltese",owner1)
+dog2.bark()
