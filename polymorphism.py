@@ -37,6 +37,8 @@ for vehicle in vehicles:
         vehicle.stop()
     elif isinstance(vehicle,Bike):
         print(f"Inspecting {vehicle.brand} {vehicle.model} {type(vehicle).__name__}")
+        vehicle.start_bike()
+        vehicle.stop_bike()
     else:
         raise Exception("Object is not a Vehicle")
     
